@@ -19,13 +19,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import br.com.devtest.poc_gemini_nano.ai.handlers.RewriterHandler
 import br.com.devtest.poc_gemini_nano.ui.theme.PocGeminiNanoTheme
 import kotlinx.coroutines.launch
-import org.w3c.dom.Text
 
 class MainActivity : ComponentActivity() {
     private val rewriterHandler: RewriterHandler by lazy {
